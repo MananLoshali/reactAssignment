@@ -35,7 +35,7 @@ const Login = () => {
     }
     try {
       const res = await request.post("/login", { id, password });
-      console.log(res.data);
+
       await localStorage.setItem(
         "userInfo",
         JSON.stringify({
